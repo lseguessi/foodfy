@@ -212,7 +212,9 @@ iframe {
     top: 5%;
 }
 
+
 /* ==== RECIPE ==== */
+
 .card.recipe {
     margin: 0 auto;
 }
@@ -229,16 +231,16 @@ iframe {
     margin-top: 4px;
 }
 
-.about-recipe{
+.about-recipe {
     margin: 0 auto;
     text-align: left;
 }
 
-.about-recipe h3{
+.about-recipe h3 {
     margin-top: 50px;
 }
 
-.about-recipe span{
+.about-recipe span {
     margin-top: 50px;
     padding: 18px;
     font-size: 14px;
@@ -246,23 +248,23 @@ iframe {
     cursor: pointer;
 }
 
-.about-recipe p{
+.about-recipe p {
     margin-top: 18px;
     font-size: 16px;
 }
 
 .ingredients-list,
-.preparation-list{
+.preparation-list {
     margin-top: 20px;
     font-size: 18px;
 }
 
 .ingredients li,
-.preparation li{
+.preparation li {
     margin-left: 16px;
     line-height: 28px;
 }
- 
-.hide-show{
+
+.hide-show {
     display: none;
 }
