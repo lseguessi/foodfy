@@ -7,11 +7,13 @@ routes.get('/', user.index)
 routes.get('/about', user.about)
 routes.get('/recipes', user.recipes)
 routes.get('/recipes/:id', user.recipe)
+
+//Admin 
+routes.get("/admin/recipes", admin.recipes); 
+
+
 routes.use(function(req, res) {
     return res.status(404).render('./users/not-found')
 })
-
-routes.get("/admin/teste", admin.index); 
-
 
 module.exports = routes

@@ -18,7 +18,7 @@ body {
 
 /* ==== Header ==== */
 
-header {
+.layout {
     width: 100%;
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -26,6 +26,7 @@ header {
     align-items: center;
     margin-top: 38px;
 }
+
 
 header .links a {
     text-decoration: none;
@@ -36,6 +37,15 @@ header .links a {
 
 .links a:hover {
     text-decoration: underline;
+}
+
+.headerAdmin{
+    background-color: black;
+    padding: 40px;
+}
+
+.headerAdmin img{
+    margin-left: 21%;
 }
 
 
@@ -84,6 +94,14 @@ header .links a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    cursor: pointer;
+}
+
+.cardsAdmin {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     cursor: pointer;
 }
 

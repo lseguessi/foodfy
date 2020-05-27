@@ -1,0 +1,28 @@
+{% extends "layout_admin.njk" %}
+
+{% block content %}
+
+    <div id="content">
+        <section class="more-acess">
+
+            <h2>Gerencias Receitas</h2>
+
+            <div class="cardsAdmin">
+                {% for recipe in recipes %}
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{{recipe.img}}" alt="Imagem de {{recipe.title}}">
+                        </div>
+                        <div class="info-card">
+                            <h5>{{recipe.title}}</h5>
+                            <p class="by-name">por
+                                {{recipe.by}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

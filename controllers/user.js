@@ -5,11 +5,12 @@ exports.index = function(req, res){
     res.render('./users/index', {recipes: featuredRecipes})
 }
 exports.about = function(req, res){
-    return res.render('./users/about')
+    res.render('./users/about')
 }
 exports.recipes = function(req, res){
     res.render('./users/recipes', {recipes})
 }
+
 exports.recipe = function(req, res) {
     const id = req.params.id;
     res.render('./users/recipe', {recipe: recipes[id]})
