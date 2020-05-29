@@ -98,16 +98,43 @@ header .links a {
 }
 
 .cardsAdmin {
-    margin: 0 auto;
+    margin: 38px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 50px;
+}
+
+.cardsAdmin .card-img img{
+    width: 172px;
+    height: 80px;
+    float: left;
     cursor: pointer;
+    margin-right: 20px;
+}
+
+.cardsAdmin p, h5{
+    text-align: left;
+    padding: 2px;
+}
+
+.cardsAdmin .card-img h5{
+    font-size: 18px;
+}
+
+.cardsAdmin .card-img p{
+    color: #777;
+}
+
+.cardsAdmin a{
+    text-decoration: none;
+    color: #6558C3;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .card-img img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 8.5px;
 }
 
 section .info-card {

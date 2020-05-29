@@ -10,6 +10,7 @@ routes.get('/recipes/:id', user.recipe)
 
 //Admin 
 routes.get("/admin/recipes", admin.recipes); 
+routes.get("/admin/recipes/:id", admin.recipe); 
 
 
 routes.use(function(req, res) {
