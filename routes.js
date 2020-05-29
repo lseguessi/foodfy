@@ -12,6 +12,8 @@ routes.get('/recipes/:id', user.recipe)
 routes.get("/admin/recipes", admin.recipes); 
 routes.get("/admin/recipes/:id", admin.recipe); 
 
+routes.get("/admin/recipes/create", admin.create);
+
 
 routes.use(function(req, res) {
     return res.status(404).render('./users/not-found')

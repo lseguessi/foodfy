@@ -3,7 +3,7 @@ const visible = document.querySelectorAll('.showHide')
 
 for(let i=0; i<receita.length; i++){
     receita[i].addEventListener('click', function(){
-        window.location.href=`/recipes/${i}`
+        window.location.href=`/admin/recipes/${i}`
     })
 }
 
