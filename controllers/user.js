@@ -7,10 +7,10 @@ exports.about = function(req, res){
     res.render('./users/about')
 }
 exports.recipes = function(req, res){
-    res.render('./users/recipes', {recipes})
+    res.render('./users/recipes', {recipes: recipes.recipes})
 }
 
 exports.recipe = function(req, res) {
     const id = req.params.id;
-    res.render('./users/recipe', {recipe: recipes[id]})
+    res.render('./users/recipe', {recipe: recipes.recipes[id]})
 }

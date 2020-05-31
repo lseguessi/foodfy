@@ -156,7 +156,7 @@ section .info-card p {
     margin-bottom: 20px;
 }
 
-.btn-create a{
+.top-card a{
     background-color: #6558C3;
     width: 136px;
     height: 37px;
@@ -165,6 +165,7 @@ section .info-card p {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+    line-height: 35px;
 }
 
 .top-card a:hover{

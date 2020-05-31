@@ -1,49 +1,12 @@
 {% extends "layout_admin.njk" %}
 {% block content %}
     <div id="content">
-        <section class="more-acess">
-            <div class="card recipe">
-                <div class="card" id="{{recipe.id}}">
-                    <div class="card-img">
-                        <div class="top-card">
-                            <h2>Receita: {{recipe.title}}</h2>
-                            <div class="btn-create">
-                                <a href="#">Deletar</a>
-                                <a href="#">Salvar Receita</a>
-                            </div>
-                        </div>
-                        <img src="{{recipe.img}}" alt="Imagem de {{recipe.title}}">
-                    </div>
-                </div>
-            </div>
-
-            <div class="info-recipe">
-                <h4>{{recipe.title}}</h4>
-                <p class="by-name">por
-                    {{recipe.by}}</p>
-            </div>
-        </section>
-    </div>
-    <div class="about-recipe">
-        <div class="ingredients">
-            <h3>Ingredientes </h3>
-            <ul>
-                {% for ingredient in recipe.ingredients %}
-                    <li>{{ingredient}}</li>
-                {% endfor %}
-            </ul>
+        <div class="top-card">
+            <h2>Criar Receita</h2>
+            <a href="#">Deletar</a>
+            <a href="#">Salvar Receita</a>
         </div>
-        <div class="preparation">
-            <h3>Modo de preparo </h3>
-            <ul>
-                {% for ingredient in recipe.preparation %}
-                    <li>{{ingredient}}</li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div class="history">
-            <h3>História do prato</h3>
-            <p>{{recipe.information}}</p>
-        </div>
-    </div>
-{% endblock %}
+        <form action="">
+            <input type="text" name="recipe_url" id="">
+        </form>
+    {% endblock %}
