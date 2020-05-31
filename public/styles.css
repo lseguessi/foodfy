@@ -156,7 +156,7 @@ section .info-card p {
     margin-bottom: 20px;
 }
 
-.top-card button{
+.btn-create a{
     background-color: #6558C3;
     width: 136px;
     height: 37px;
@@ -167,7 +167,7 @@ section .info-card p {
     cursor: pointer;
 }
 
-.top-card button:hover{
+.top-card a:hover{
     color: black;
     transition: 350ms;
 }
@@ -334,4 +334,29 @@ iframe {
 
 .hide-show {
     display: none;
+}
+
+/* ==== RECIPES ADMIN ==== */
+
+.ger-recipes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ger-recipes a{
+    background-color: #6558C3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 136px;
+    height: 37px;
+    line-height: 36px;
+}
+
+.ger-recipes a:hover{
+    color: black;
+    transition: 350ms;
 }

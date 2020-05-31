@@ -1,8 +1,7 @@
 const recipes = require('../data')
 
 exports.index = function(req, res){
-    const featuredRecipes = recipes.slice(0,6)
-    res.render('./users/index', {recipes: featuredRecipes})
+    res.render('./users/index', {recipes: recipes.recipes})
 }
 exports.about = function(req, res){
     res.render('./users/about')

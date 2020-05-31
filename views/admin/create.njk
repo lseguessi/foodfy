@@ -5,11 +5,13 @@
             <div class="card recipe">
                 <div class="card" id="{{recipe.id}}">
                     <div class="card-img">
-                    <div class="top-card">
-                        <h2>Receita: {{recipe.title}}</h2>
-                        <button> Deletar </button>
-                        <button> Salvar </button> 
-                    </div>
+                        <div class="top-card">
+                            <h2>Receita: {{recipe.title}}</h2>
+                            <div class="btn-create">
+                                <a href="#">Deletar</a>
+                                <a href="#">Salvar Receita</a>
+                            </div>
+                        </div>
                         <img src="{{recipe.img}}" alt="Imagem de {{recipe.title}}">
                     </div>
                 </div>
@@ -25,11 +27,11 @@
     <div class="about-recipe">
         <div class="ingredients">
             <h3>Ingredientes </h3>
-                <ul>
-                    {% for ingredient in recipe.ingredients %}
-                        <li>{{ingredient}}</li>
-                    {% endfor %}
-                </ul>
+            <ul>
+                {% for ingredient in recipe.ingredients %}
+                    <li>{{ingredient}}</li>
+                {% endfor %}
+            </ul>
         </div>
         <div class="preparation">
             <h3>Modo de preparo </h3>
