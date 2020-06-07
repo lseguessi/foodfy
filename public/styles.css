@@ -361,3 +361,58 @@ iframe {
     color: black;
     transition: 350ms;
 }
+
+
+/* ==== CREATE RECIPE ==== */
+
+.header-create {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.create-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.create-menu a {
+    background-color: #6558C3;
+    width: 139px;
+    height: 37px;
+    line-height: 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.create-menu a:first-child{
+    width: 92px;
+    background-color: crimson;
+}
+
+.create-menu a:hover{
+    color: black;
+}
+
+.form-create{
+    margin-top: 35px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-create .item{
+    margin-top: 25px;
+}
+
+.form-create input{
+    margin-top: 10px;
+
+    padding: 16px;
+
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+}

@@ -1,12 +1,28 @@
 {% extends "layout_admin.njk" %}
 {% block content %}
-    <div id="content">
-        <div class="top-card">
-            <h2>Criar Receita</h2>
+
+    <div class="header-create">
+        <h2>Criar Receita</h2>
+        <div class="create-menu">
             <a href="#">Deletar</a>
             <a href="#">Salvar Receita</a>
         </div>
+    </div>
+
+    <main class="form-create">
         <form action="">
-            <input type="text" name="recipe_url" id="">
+            <div class="item">
+                <div>Imagem da receita</div>
+                <input type="text" name="image_url" placeholder="http://">
+            </div>
+
+            <div class="item" id="ingredients">
+                <div>Ingredientes</div>
+                <div class="ingredients">
+                    <input type="text" name="ingredients[]" value="" placeholder="Ingredientes">
+                </div>
+            </div>
+        <button type="button" class="add-ingredient">Add Ingredient</button>
         </form>
-    {% endblock %}
+    </main>
+{% endblock %}
