@@ -382,7 +382,7 @@ iframe {
     background-color: #6558C3;
     width: 139px;
     height: 37px;
-    line-height: 40px;
+    line-height: 37px;
     border-radius: 8px;
     text-decoration: none;
     color: white;
@@ -412,7 +412,23 @@ iframe {
 
     padding: 16px;
 
-    border: 1px solid black;
+    border: 1px solid #DDDDDD;
     border-radius: 4px;
     width: 100%;
+}
+
+.form-create button{
+    margin-top: 15px;
+    background-color: white;
+    color: #6558C3;
+    font-weight: bold;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.form-create textarea{
+    border: 1px solid #DDDDDD;
+    margin: 10px 0 35px;
+    resize: none;
 }

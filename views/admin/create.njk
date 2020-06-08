@@ -13,7 +13,7 @@
         <form action="">
             <div class="item">
                 <div>Imagem da receita</div>
-                <input type="text" name="image_url" placeholder="http://">
+                <input type="url" name="image_url" placeholder="http://">
             </div>
 
             <div class="item" id="ingredients">
@@ -22,7 +22,22 @@
                     <input type="text" name="ingredients[]" value="" placeholder="Ingredientes">
                 </div>
             </div>
-        <button type="button" class="add-ingredient">Add Ingredient</button>
+        <button type="button" class="add-ingredient">Adicionar ingrediente</button>
+
+        <div class="item" id="preparation">
+                <div>Modo de preparo</div>
+                <div class="preparation">
+                    <input type="text" name="preparation[]" value="" placeholder="Modo de preparo">
+                </div>
+            </div>
+        <button type="button" class="add-preparation">Adicionar novo passo</button>
+
+        <div class="item">
+                <div>Informações adicionais</div>
+                <textarea cols="133" rows="12" wrap="hard" name="information" placeholder="Informações complementares da receita"></textarea>
+            </div>
+
+        
         </form>
     </main>
 {% endblock %}
