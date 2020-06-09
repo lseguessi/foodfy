@@ -378,7 +378,7 @@ iframe {
     width: 240px;
 }
 
-.create-menu a {
+.create-menu button {
     background-color: #6558C3;
     width: 139px;
     height: 37px;
@@ -388,12 +388,12 @@ iframe {
     color: white;
 }
 
-.create-menu a:first-child{
+.create-menu button:first-child{
     width: 92px;
     background-color: crimson;
 }
 
-.create-menu a:hover{
+.create-menu button:hover{
     color: black;
 }
 
