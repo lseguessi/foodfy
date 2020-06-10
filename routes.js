@@ -15,8 +15,9 @@ routes.get("/admin/recipes", admin.recipes);
 routes.get("/admin/recipes/:id", admin.recipe); 
 //Página para criar nova receita
 routes.get("/admin/create", admin.create);
+
 //Rota para criar a receita
-routes.post("/admin/create", admin.post)
+routes.post('/admin/create', admin.post)
 
 routes.use(function(req, res) {
     return res.status(404).render('./users/not-found')

@@ -378,14 +378,14 @@ iframe {
     width: 240px;
 }
 
-.create-menu button {
+.create-menu button[type="submit"] {
     background-color: #6558C3;
+    color: white;
     width: 139px;
     height: 37px;
     line-height: 37px;
     border-radius: 8px;
     text-decoration: none;
-    color: white;
 }
 
 .create-menu button:first-child{
@@ -394,7 +394,8 @@ iframe {
 }
 
 .create-menu button:hover{
-    color: black;
+    opacity: 0.9;
+    transition: 350ms;
 }
 
 .form-create{
