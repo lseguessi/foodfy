@@ -3,7 +3,7 @@ const data = require('../data.json');
 
 
 exports.recipes = function(req, res){
-    res.render('./admin/recipes', {recipes: data.recipes})
+    res.render('./admin/recipes', {recipe: data.recipes})
 }
 
 exports.recipe = function(req, res) {

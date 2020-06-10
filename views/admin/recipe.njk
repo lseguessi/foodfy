@@ -9,7 +9,7 @@
                         <h2>Receita: {{recipe.title}}</h2>
                         <a href="#">Editar Receita</a>
                     </div>
-                        <img src="{{recipe.img}}" alt="Imagem de {{recipe.title}}">
+                        <img src="{{recipe.image_url}}" alt="Imagem de {{recipe.title}}">
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
         </div>
         <div class="history">
             <h3>História do prato</h3>
-            <p>{{recipe.information}}</p>
+            <p>{{recipes.information}}</p>
         </div>
     </div>
 {% endblock %}
