@@ -3,11 +3,18 @@ const data = require('../data.json');
 
 
 exports.recipes = function(req, res){
-    res.render('./admin/recipes', {recipe: data.recipes})
+    res.render('./admin/recipes', {recipes: data.recipes})
 }
 
 exports.recipe = function(req, res) {
     const {id} = req.params;
+
+    const foundRecipe = data.recipes.find(function(recipe){
+        return recipe.id == id
+    })
+
+    if(!foundRecipe) return res.send('Receita não encontrada!')
+
     res.render('./admin/recipe', {recipe: data.recipes[id]})
 }
 

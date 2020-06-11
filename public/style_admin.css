@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+/* ==== Header ==== */
+
+.headerAdmin{
+    background-color: black;
+    padding: 40px;
+}
+
+.headerAdmin img{
+    margin-left: 11%;
+}
+
+.more-acess {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* ==== CARDS ADMIN ==== */
+
+.cardsAdmin {
+    margin: 38px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 8px;
+
+    width: 940px;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+.cardsAdmin .card-img img{
+    width: 172px;
+    height: 80px;
+    float: left;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.cardsAdmin p, h5{
+    padding: 2px;
+}
+
+.cardsAdmin .card-img p{
+    color: #777;
+}
+
+.cardsAdmin a{
+    text-decoration: none;
+    color: #6558C3;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    margin-bottom: 20px;
+}
+
+.top-card a{
+    background-color: #6558C3;
+    width: 136px;
+    height: 37px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 35px;
+}
+
+.top-card a:hover{
+    opacity: 0.9;
+    transition: 350ms;
+}
+
+/* ==== RECIPE ==== */
+
+.info-recipe {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.info-recipe p {
+    font-size: 20px;
+    color: #777;
+    margin-top: 4px;
+}
+
+.about-recipe {
+    text-align: left;
+}
+
+.about-recipe h3 {
+    margin-top: 30px;
+}
+
+.ingredients li,
+.preparation li {
+    margin-left: 16px;
+    line-height: 28px;
+}
+
+/* ==== RECIPES ADMIN ==== */
+
+.ger-recipes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ger-recipes a{
+    background-color: #6558C3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 136px;
+    height: 37px;
+    line-height: 36px;
+}
+
+.ger-recipes a:hover{
+    color: black;
+    transition: 350ms;
+}
+
+.history p {
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+
+/* ==== CREATE RECIPE ==== */
+
+.header-create {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.create-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.create-menu button[type="submit"] {
+    background-color: #6558C3;
+    color: white;
+    width: 139px;
+    height: 37px;
+    line-height: 37px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.create-menu button:first-child{
+    width: 92px;
+    background-color: crimson;
+}
+
+.create-menu button:hover{
+    opacity: 0.9;
+    transition: 350ms;
+}
+
+.form-create{
+    margin-top: 35px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.form-create .item{
+    margin-top: 25px;
+}
+
+.form-create input{
+    margin-top: 10px;
+
+    padding: 16px;
+
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-create button{
+    margin-top: 15px;
+    background-color: white;
+    color: #6558C3;
+    font-weight: bold;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.form-create textarea{
+    border: 1px solid #DDDDDD;
+    margin: 10px 0 35px;
+    resize: none;
+}

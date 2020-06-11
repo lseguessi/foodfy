@@ -45,7 +45,7 @@ header .links a {
 }
 
 .headerAdmin img{
-    margin-left: 21%;
+    margin-left: 11%;
 }
 
 
@@ -100,13 +100,18 @@ header .links a {
 .card-img img {
     width: 100%;
     border-radius: 8.5px;
+
+    width: 300px;
+    height: 120px;
+
+    object-fit: cover;
 }
 
 section .info-card {
     font-size: 18px;
-    text-align: left;
+    /* text-align: left; */
     font-weight: lighter;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
 section .info-card p {
