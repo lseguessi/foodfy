@@ -43,3 +43,15 @@ exports.post = function(req, res){
 
 
 }
+
+exports.edit = function(req, res){
+    const {id} = req.params
+
+    const foundRecipe = data.recipes.find(function(recipe){
+        return recipe.id == id
+    })
+
+    if(!foundRecipe) return res.send('Receita não encontrada!')
+
+    res.render('./admin/edit', {recipe: data.recipes[id]})
+}
