@@ -2,11 +2,11 @@ const fs = require('fs');
 const data = require('../data.json');
 
 
-exports.recipes = function(req, res){
+exports.index = function(req, res){
     res.render('./admin/recipes', {recipes: data.recipes})
 }
 
-exports.recipe = function(req, res) {
+exports.show = function(req, res) {
     const {id} = req.params;
 
     const foundRecipe = data.recipes.find(function(recipe){

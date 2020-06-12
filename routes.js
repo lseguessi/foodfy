@@ -11,20 +11,15 @@ routes.get('/recipes/:id', user.recipe)
 
 
 //Admin 
-//Lista todas as receitas
-routes.get('/admin/recipes', admin.recipes)
-
-//Lista receita selecionada
-routes.get('/admin/recipes/:id', admin.recipe)
-
-//Página para criar nova receita
+routes.get('/admin/recipes', admin.index)
 routes.get('/admin/create', admin.create)
-
-//Rota para criar a receita
-routes.post('/admin/create', admin.post)
-
-//Rota para alterar cadastro de receita
+routes.get('/admin/recipes/:id', admin.show)
 routes.get('/admin/edit/:id', admin.edit)
+
+//CRUD - Create, Read, Update, Delete)
+routes.post('/admin/create', admin.post) //Create
+//routes.put('/admin/recipes', admin.put) //Update
+//routes.delete('/admin/recipes', admin.delete) // Delete
 
 routes.use(function(req, res) {
     return res.status(404).render('./users/not-found')
