@@ -13,6 +13,38 @@
         "Misturar tudo"
       ],
       "information": "N/A"
+    },
+    {
+      "id": 1,
+      "title": "Pizza",
+      "by": "Julibeu Doido",
+      "image_url": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "ingredients": [
+        "Trigo",
+        "Agua",
+        "Ovo",
+        "Fermento Biológico"
+      ],
+      "preparation": [
+        "Misturar tudo no liquificados",
+        "Adicionar trigo",
+        "Mexer"
+      ],
+      "information": "Adicionar azeite se desejavel."
+    },
+    {
+      "id": 2,
+      "title": "Teste 03",
+      "by": "Tonhão",
+      "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
+      "ingredients": [
+        "Agua",
+        "Sabão"
+      ],
+      "preparation": [
+        "asas"
+      ],
+      "information": "asas"
     }
   ]
 }
