@@ -17,8 +17,8 @@ routes.get('/admin/recipes/:id', admin.show)
 routes.get('/admin/edit/:id', admin.edit)
 
 //CRUD - Create, Read, Update, Delete)
-routes.post('/admin/create', admin.post) //Create
-//routes.put('/admin/recipes', admin.put) //Update
+routes.post('/admin/recipes', admin.post) //Create
+routes.put('/admin/recipes', admin.put) //Update
 //routes.delete('/admin/recipes', admin.delete) // Delete
 
 routes.use(function(req, res) {
