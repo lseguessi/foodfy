@@ -70,7 +70,11 @@ exports.edit = function(req, res){
 
     if(!foundRecipe) return res.send('Receita não encontrada!')
 
-    res.render('./admin/edit', {recipe: data.recipes[id]})
+    const recipe = {
+        ...foundRecipe
+    }
+
+    res.render('./admin/edit', { recipe })
 }
 
 exports.put = function(req, res){
@@ -91,11 +95,11 @@ exports.put = function(req, res){
         ...req.body
     }
 
-    data.recpes[index] = recipe
+    data.recipes[index] = recipe
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err){
         if (err) return res.send('Erro ao gravar arvquivo no servidor')
 
-        return res.redirect(`/admin/recipe/${id}`)
+        return res.redirect(`/admin/recipes/${id}`)
     })
 
 }

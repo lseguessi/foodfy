@@ -204,6 +204,7 @@ footer .foodfy-footer p {
 .preparation li {
     margin-left: 16px;
     line-height: 28px;
+    list-style: none;
 }
 
 .hide-show {

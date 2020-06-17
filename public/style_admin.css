@@ -129,6 +129,7 @@ body {
 .preparation li {
     margin-left: 16px;
     line-height: 28px;
+    list-style: none;
 }
 
 /* ==== RECIPES ADMIN ==== */
