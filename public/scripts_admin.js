@@ -11,7 +11,7 @@ for(let i=0; i<receita.length; i++){
 // Adicionar ingredientes
 function addIngrediente(){
     const ingredients = document.querySelector('#ingredients')
-    const fieldContainer = document.querySelectorAll('.ingredients')
+    const fieldContainer = document.querySelectorAll('.ingredient')
 
     //Realizar um clone do útlimo ingrediente
     const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true)
