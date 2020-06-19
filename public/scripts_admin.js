@@ -7,18 +7,6 @@ for(let i=0; i<receita.length; i++){
     })
 }
 
-// for(let i=0; i < visible.length; i++){
-//     visible[i].addEventListener('click', function(){
-//         document.querySelector('.list'+i).classList.toggle('hide-show')
-
-//         if(document.querySelector('.list'+i).classList.contains('hide-show')){
-//             visible[i].innerHTML = 'Mostrar'
-//         }else{
-//             visible[i].innerHTML = 'Esconder'
-//         }
-//     })    
-// }
-
 
 // Adicionar ingredientes
 function addIngrediente(){
