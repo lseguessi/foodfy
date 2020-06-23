@@ -32,14 +32,14 @@ function addPreparation(){
     const preparationField = document.querySelectorAll('.preparation')
 
     //Realizar um clone do último modo de preparo
-    const newPreparation = preparationField[preparationField.length - 1].cloneNode(true)
+    const newField = preparationField[preparationField.length - 1].cloneNode(true)
 
     //Não adicionar um novo campo, caso o último estiver vazio
-    if(newPreparation.children[0].value = "") return false
+    if(newField.children[0].value = "") return false
 
     //Deixa o valor do input em branco para próxima etapa
-    newPreparation.children[0].value = ""
-    preparation.appendChild(newPreparation)
+    newField.children[0].value = ""
+    preparation.appendChild(newField)
 }
 
 document.querySelector('.add-preparation').addEventListener('click', addPreparation)
