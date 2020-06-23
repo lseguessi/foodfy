@@ -36,6 +36,28 @@
         "Fermento Biológico",
         "batata"
       ]
+    },
+    {
+      "id": "2",
+      "title": "Cinnamon Roll",
+      "by": "Silvia Miake",
+      "image_url": "https://img.itdg.com.br/tdg/images/blog/uploads/2017/08/shutterstock_117255817.jpg?w=1200",
+      "ingredients": [
+        "350ml Leite",
+        "10gr Fermento Biológico",
+        "500gr Trigo",
+        "250gr Açucar Mascavo",
+        "100gr Canela",
+        "80gr Manteiga"
+      ],
+      "preparation": [
+        "Amornar o leite",
+        "Misturar com Fermento",
+        "Misturar demais ingredientes",
+        "Assar",
+        ""
+      ],
+      "information": ""
     }
   ]
 }

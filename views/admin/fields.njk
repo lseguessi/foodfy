@@ -38,11 +38,11 @@
                 <input type="text" value="{{preparation}}" name="preparation[]" placeholder="Modo de preparo">
             </div>
         {% endfor %}
-    {% endif %}
+    {% else %}
     <div class="preparation">
         <input type="text" value="" name="preparation[]" placeholder="Modo de preparo">
     </div>
-
+    {% endif %}
 </div>
 
 <button type="button" class="add-preparation">Adicionar novo passo</button>
