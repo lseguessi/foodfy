@@ -165,16 +165,12 @@ body {
 /* ==== CREATE RECIPE ==== */
 
 .header-create {
+    width: 969px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 40px;
-}
-
-.create-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 240px;
 }
 
 .create-menu button[type="submit"] {
@@ -187,9 +183,14 @@ body {
     text-decoration: none;
 }
 
-.create-menu button:first-child{
-    width: 92px;
+.create-menu button:first-child[type="submit"] {
     background-color: crimson;
+    color: white;
+    width: 139px;
+    height: 37px;
+    line-height: 37px;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 .create-menu button:hover{

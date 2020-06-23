@@ -32,10 +32,10 @@
 
 <div class="item" id="preparation">
     <div>Modo de preparo</div>
-    <div class="preparation">
-        {% if recipe.preparation != 0 %}
+        {% if recipe.preparation %}
             {% for preparation in recipe.preparation %}
-                <input type="text" value="{{preparation}}" name="preparation" placeholder="Modo de preparo">
+            <div class="preparation">
+                <input type="text" value="{{preparation}}" name="preparation[]" placeholder="Modo de preparo">
             {% endfor %}
         {% endif %}
         <input type="text" value="" name="preparation[]" placeholder="Modo de preparo">

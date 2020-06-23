@@ -19,7 +19,7 @@ routes.get('/admin/edit/:id', admin.edit)
 //CRUD - Create, Read, Update, Delete)
 routes.post('/admin/recipes', admin.post) //Create
 routes.put('/admin/recipes', admin.put) //Update
-//routes.delete('/admin/recipes', admin.delete) // Delete
+routes.delete('/admin/recipes', admin.delete) // Delete
 
 routes.use(function(req, res) {
     return res.status(404).render('./users/not-found')
